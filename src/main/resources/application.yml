@@ -1,11 +1,14 @@
+server:
+  port: 8090
+
 spring:
   application:
-    name: java.api
+    name: treinamento
   datasource:
     driverClassName: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/java.api
     username: postgres
     password: postgre1234      
   jpa:
-    hibernate.ddl-auto: create-drop
+    hibernate.ddl-auto: update
     show-sql: true 
